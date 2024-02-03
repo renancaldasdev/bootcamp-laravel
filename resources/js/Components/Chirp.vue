@@ -50,6 +50,13 @@
                         >
                             Edit
                         </button>
+                        <DropdownLink
+                            as="button"
+                            :href="route('chirps.destroy', chirp.id)"
+                            method="delete"
+                        >
+                            Delete
+                        </DropdownLink>
                     </template>
                 </Dropdown>
             </div>
@@ -88,6 +95,7 @@
 
 <script setup>
 import Dropdown from "./Dropdown.vue";
+import DropdownLink from "./DropdownLink.vue";
 import InputError from "./InputError.vue";
 import PrimaryButton from "./PrimaryButton.vue";
 

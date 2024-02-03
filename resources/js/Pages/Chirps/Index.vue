@@ -5,7 +5,7 @@
             <form
                 @submit.prevent="
                     form.post(route('chirps.store'), {
-                        onSuccess: () => form.reser(),
+                        onSuccess: () => form.reset(),
                     })
                 "
             >
